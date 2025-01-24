@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Vivien</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header" >
+        <a img href="#" class="logo"> Vivien. </a>
+
+        <nav class="navbar">
+            <a href="#" class="active">Home</a>
+            <a href="#Compétences">Compétences</a>
+            <a href="#">Contact</a>
+
+        </nav>
+        <img src="images/logo_menu.png" alt="menu hamburger" class="menu-hamburger">
+    </header>
+
+    <script>
+            const menuHamburger = document.querySelector(".menu-hamburger")
+            const navLinks = document.querySelector('.navbar')
+     
+            menuHamburger.addEventListener('click',()=>{
+            navLinks.classList.toggle('mobile-menu')
+            })
+    </script>
+    
+    
+
+
+    <section class="home">
+        <div class="home-content">
+            <h1>Hello, I'm Vivien </h1>
+            <p>I'm a beginner in HTML,CSS,Lua,SQL and python and this is my site ! </p>
+    </section>
+
+    <div id="Compétences" class="skill-title">
+        <h2>Mes Compétences</h2>
+    </div>
+
+
+    <div class="skill">
+        <div class="name">
+            <span> HTML </span>
+            <span> CSS </span>
+            <span> LUA </span>
+            <span> SQL </span>
+            <span> Python </span>
+        </div>
+        
+        <div class="bar-container">
+            <div class="bar"><div class="progress"></div></div>
+            <div class="bar"><div class="progress"></div></div>
+            <div class="bar"><div class="progress"></div></div>
+            <div class="bar"><div class="progress"></div></div>
+            <div class="bar"><div class="progress"></div></div>
+
+        </div>
+
+
+</body>
+</html>

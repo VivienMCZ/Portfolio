@@ -1,0 +1,217 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    margin:  0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poppins',sans-serif;
+
+}
+
+html{
+    scroll-behavior: smooth;
+    animation-delay: 1,2s;
+}
+
+body {
+    background: #e4e3e3b2;
+}
+
+.header { 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+
+    font-size: 25px ;
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: #797777;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px; 
+    transition: .3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: black;
+}
+
+.menu-hamburger {
+    display: none;
+    position: absolute;
+    top: 17px;
+    right: 50px;
+    width: 35px;
+
+}
+
+
+.home  { 
+    margin-left: 50px;
+    color: black;
+    margin-top: 250px;
+}
+
+.navbar.mobile-menu {
+    margin-left:0 ;
+}
+
+@media screen and (max-width: 900px) {
+
+    
+
+    .header {
+        
+        padding: 20px 10%;
+    }
+
+    
+
+    .navbar {
+        top: 0;
+        left: 0;
+        position: absolute;
+        background-color:rgb(255, 255, 255);
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-left: -100%;
+    }
+
+    .header.mobile-menu {
+        margin-left:0 ;
+    }
+
+    
+    .menu-hamburger {
+        display: block;
+    }
+
+    .navbar a { 
+        display: flex;
+        margin: 25px 0;
+        font-size: 2em;
+        
+        
+    }
+
+
+
+
+}
+
+
+
+.skill-title {
+    margin-left: 50px;
+    color: black;
+    margin-top: 250px;
+    font-size: 16px
+}
+
+
+
+.skill {
+    display:flex;
+    justify-content: center;
+}
+
+
+.skill .name {
+    
+    display: flex;
+    flex-direction: column;
+    color: gray;
+    font-size: 25px;
+    font-weight: 500;
+    margin-right: 40px;
+}
+
+.skill .name span {
+    
+    
+    margin: 25px 0;
+    box-shadow:  9.91px 9.91px 35px #b5b6b9,  -9.91px -9.91px 35px #e8e9ee;
+    padding: 10px 30px;
+    text-align: center;
+    border-radius: 20px;
+    transition: 0,2s;
+    cursor: pointer;
+}
+
+.skill .name span:hover {
+    box-shadow:  9.91px 9.91px 15px #D9DADE,  -9.91px -9.91px 15px #FFFFFF,
+        inset 9.91px 9.91px 15px #D9DADE, inset -9.91px -9.91px 15px #FFFFFF;;
+    
+}
+
+.bar{
+    width: 400px;
+    height: 30px;
+    border-radius: 20px;
+    box-shadow: inset 9.91px 9.91px 15px #b8b8bb, inset -9.91px -9.91px 15px #e8e9ee;
+}
+
+
+.bar-container{
+    display: flex ;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+.bar .progress{
+    height: 100%;
+    background: linear-gradient(to right, grey,black);
+    border-radius: 20px;
+}
+
+.bar:nth-child(1) .progress{
+    
+    width: 40%;
+    
+}
+
+.bar:nth-child(2) .progress{
+    
+    width: 50%;
+    
+}
+
+.bar:nth-child(3) .progress{
+    
+    width: 30%;
+    
+}
+
+.bar:nth-child(4) .progress{
+    
+    width: 20%;
+    
+}
+
+.bar:nth-child(5) .progress{
+    
+    width: 20%;
+    
+}
