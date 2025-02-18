@@ -91,6 +91,15 @@ body {
     height: 100px;
 }
 
+.roadmap-title h2{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 250px;
+    margin-bottom: 80px;
+}
+
+
 .roadmap-line {
     position: absolute;
     top: 50%;
