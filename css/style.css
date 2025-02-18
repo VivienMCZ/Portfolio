@@ -1,17 +1,15 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
 * {
-    margin:  0;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:'Poppins',sans-serif;
-
+    font-family: 'Poppins', sans-serif;
 }
 
-html{
+html {
     scroll-behavior: smooth;
-    animation-delay: 1,2s;
+    animation-delay: 1.2s;
     height: 100%;
     margin: 0;
 }
@@ -22,7 +20,7 @@ body {
     margin: 0;
 }
 
-.header { 
+.header {
     position: fixed;
     display: flex;
     justify-content: center;
@@ -31,7 +29,6 @@ body {
     left: 0;
     width: 100%;
     padding: 20px 10%;
-    
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -39,8 +36,7 @@ body {
 }
 
 .logo {
-
-    font-size: 25px ;
+    font-size: 25px;
     color: black;
     text-decoration: none;
     font-weight: 600;
@@ -51,7 +47,7 @@ body {
     color: #797777;
     text-decoration: none;
     font-weight: 500;
-    margin-left: 35px; 
+    margin-left: 35px;
     transition: .3s;
 }
 
@@ -66,10 +62,9 @@ body {
     top: 17px;
     right: 50px;
     width: 35px;
-
 }
 
-.home  { 
+.home {
     color: black;
     margin-top: 250px;
     margin-bottom: 80px;
@@ -86,25 +81,70 @@ body {
 }
 
 .navbar.mobile-menu {
-    margin-left:0 ;
+    margin-left: 0;
+}
+
+.roadmap {
+    position: relative;
+    width: 80%;
+    margin: 50px auto;
+    height: 100px;
+}
+
+.roadmap-line {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+}
+
+.roadmap-point {
+    position: absolute;
+    top: 50%;
+    width: 24px;
+    height: 24px;
+    background-color: #fff;
+    border: 3px solid #000;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.roadmap-point:hover {
+    background-color: #000;
+    transform: translate(-50%, -50%) scale(1.2);
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+.roadmap-info {
+    position: absolute;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    display: none;
+    width: max-content;
+    max-width: 250px;
+    border: 2px solid #000;
+    top: -70px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
 }
 
 @media screen and (max-width: 900px) {
-
-    
-
     .header {
-        
         padding: 20px 10%;
     }
-
-    
 
     .navbar {
         top: 0;
         left: 0;
         position: absolute;
-        background-color:rgb(255, 255, 255);
+        background-color: rgb(255, 255, 255);
         width: 100%;
         height: 100vh;
         display: flex;
@@ -115,25 +155,27 @@ body {
     }
 
     .header.mobile-menu {
-        margin-left:0 ;
+        margin-left: 0;
     }
 
-    
     .menu-hamburger {
         display: block;
+        width: 32px;
+        height: 32px;
+        padding-top: 5px;
     }
 
-    .navbar a { 
+    .navbar a {
         display: flex;
         margin: 25px 0;
         font-size: 2em;
-        
-        
     }
 
-
-
-
+    .home p {
+        padding-left: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .project-title {
@@ -155,13 +197,6 @@ body {
     display: flex;
 }
 
-
-
-
-
-
-
-
 .footer {
     text-align: center;
     bottom: 0;
@@ -173,7 +208,7 @@ body {
     padding-bottom: 20px;
 }
 
-.footer-content{
+.footer-content {
     display: absolute;
 }
 

@@ -8,54 +8,51 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header class="header" >
-        <a img href="#" class="logo"> Vivien. </a>
-
+    <header class="header">
+        <a href="#" class="logo">Vivien.</a>
         <nav class="navbar">
             <a href="#" class="active">Home</a>
             <a href="#Compétences">Compétences</a>
             <a href="#project">Projet</a>
             <a href="#footer">Contact</a>
-
         </nav>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" alt="menu hamburger" class="menu-hamburger"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/>  </svg> 
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" alt="menu hamburger" class="menu-hamburger">
+            <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+            <path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/>
+        </svg>
     </header>
 
-    <script>
-            const menuHamburger = document.querySelector(".menu-hamburger")
-            const navLinks = document.querySelector('.navbar')
-     
-            menuHamburger.addEventListener('click',()=>{
-            navLinks.classList.toggle('mobile-menu')
-            })
-    </script>
-    
-    
-
+    <script src="script/script-burger.js"></script>
 
     <section class="home">
         <div class="home-content">
-            <h1>Hello, I'm Vivien </h1>
-            <p>I'm a beginner in HTML,CSS,Lua,SQL and python and this is my site ! </p>
+            <h1>Hello, I'm Vivien</h1>
+            <p>Full Stack Developer | Web, Security & Mobile | Exploring new technologies</p>
+        </div>
     </section>
 
     <div id="Compétences" class="skill-title">
         <h2>Mes Compétences</h2>
     </div>
 
-
-    <div class="skill">
-       
-    </div>
+    <div class="skill"></div>
 
     <div id="project" class="project">
         <div class="project-title">
             <h2>Mes Projet</h2>
         </div>
-
+        <video src=""></video>
+        <video src=""></video>
     </div>
 
-
+    <div class="roadmap">
+        <div class="roadmap-line"></div>
+        <div class="roadmap-point" data-info="Bac STI2D Option ITEC au Lycée Emilie de Breuteil" style="left: 20%"></div>
+        <div class="roadmap-point" data-info="Développeur Junior chez ABC, 2019" style="left: 40%"></div>
+        <div class="roadmap-point" data-info="Développeur Senior chez DEF, 2021" style="left: 60%"></div>
+        <div class="roadmap-point" data-info="Lead Developer chez GHI, 2023" style="left: 80%"></div>
+        <div class="roadmap-info"></div>
+    </div>
 
     <footer id="footer" class="footer">
         <div class="footer-content">
@@ -72,6 +69,13 @@
                 </svg>
             </a>
 
+            <a href="https://comeup.com/fr/@vivienmcz" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                    <path d="M184 48l144 0c4.4 0 8 3.6 8 8l0 40L176 96l0-40c0-4.4 3.6-8 8-8zm-56 8l0 40L64 96C28.7 96 0 124.7 0 160l0 96 192 0 128 0 192 0 0-96c0-35.3-28.7-64-64-64l-64 0 0-40c0-30.9-25.1-56-56-56L184 0c-30.9 0-56 25.1-56 56zM512 288l-192 0 0 32c0 17.7-14.3 32-32 32l-64 0c-17.7 0-32-14.3-32-32l0-32L0 288 0 416c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-128z"/>
+                </svg>
+            </a>
+
             <div class="footer-credit">
                 <p>Design, Code and Development by Vivien</p>
                 <p>© 2025 Vivien. All rights reserved.</p>
@@ -79,6 +83,6 @@
         </div>
     </footer>
 
-
+    <script src="script/script-roadmap.JS"></script>
 </body>
 </html>
